@@ -32,15 +32,6 @@ This is a RESTful Web API built using **ASP.NET Core** and **MySQL**, supporting
 | DELETE | `/api/StudentAPI/{id}` | Delete student by ID    |
 
 ## Project Structure
-ASPCoreWebAPICRUD/
-│
-├── Controllers/
-│   └── StudentAPIController.cs
-│
-├── Models/
-│   └── Student.cs
-│
-├── appsettings.json
-├── Program.cs
-├── ASPCoreWebAPICRUD.csproj
+![image](https://github.com/user-attachments/assets/daaec806-9f8d-4fcc-8fb6-da41bd5d9577)
+
 
