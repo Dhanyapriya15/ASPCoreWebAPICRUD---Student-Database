@@ -9,7 +9,7 @@ namespace ASPCoreWebAPICRUD.Controllers
     [ApiController]
     public class StudentAPIController : ControllerBase
     {
-        private readonly string connectionString = "Server=localhost;Database=taskdb;Uid=root;Pwd=root;";
+        private readonly string connectionString = "Server=localhost;Database=taskdb;Uid=root;Pwd=root;";  
 
         // GET: api/StudentAPI
         [HttpGet]
@@ -72,7 +72,7 @@ namespace ASPCoreWebAPICRUD.Controllers
             cmd.Parameters.AddWithValue("@dept", student.Department);
 
             var rows = cmd.ExecuteNonQuery();
-            return rows == 1 ? Ok("✅ Student inserted successfully!") : BadRequest("❌ Insertion failed.");
+            return rows == 1 ? Ok("Student inserted successfully!") : BadRequest(" Insertion failed.");
         }
 
         // PUT: api/StudentAPI/5
@@ -88,7 +88,7 @@ namespace ASPCoreWebAPICRUD.Controllers
             cmd.Parameters.AddWithValue("@dept", student.Department);
 
             var rows = cmd.ExecuteNonQuery();
-            return rows == 1 ? Ok("✅ Student updated successfully!") : NotFound("❌ No student found to update.");
+            return rows == 1 ? Ok(" Student updated successfully!") : NotFound(" No student found to update.");
         }
 
         // DELETE: api/StudentAPI/5
@@ -102,7 +102,7 @@ namespace ASPCoreWebAPICRUD.Controllers
             cmd.Parameters.AddWithValue("@id", id);
 
             var rows = cmd.ExecuteNonQuery();
-            return rows == 1 ? Ok("✅ Student deleted successfully!") : NotFound("❌ No student found to delete.");
+            return rows == 1 ? Ok(" Student deleted successfully!") : NotFound(" No student found to delete.");
         }
     }
 }
